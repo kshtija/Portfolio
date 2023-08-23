@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- wow animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Foundation CSS Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <!-- Foundation CSS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.util.motion.min.js">
+    </script>
+
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="style3.css" type="text/css" rel="stylesheet" /> -->
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <!-- header and nav  -->
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">KshitijaG.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="navtoggler"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#myskills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7 col-md-9 col-sm-12 col-12">
+                    <div class="home-content">
+                        <h1>Hi, I'm <span>Kshitija</span></h1>
+                        <div class="text-animate">
+                            <h3>Frontend Developer</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aperiam sequi expedita
+                            id, cupiditate minima, iusto quod libero accusamus ipsa veritatis aspernatur cum dignissimos
+                            earum commodi quisquam repellat esse necessitatibus.</p>
+                        <div class="btn-box">
+                            <a href="#"><span>Contact Me</span></a>
+                            <a href="#"><span>Download CV</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="heading">About <span>Me</span></h2>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col">
+                    <div class="about-img">
+                        <img src="./portfolio_images/myphoto.jpg" alt="about-img" class="about-img" />
+                        <span class="circle-spin"></span>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12 about-second-col">
+                    <div class="about-content">
+                        <p class="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat
+                            atque voluptatibus,
+                            quibusdam unde expedita cumque iure consequuntur ipsum voluptates!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="skill">
+                                <li>
+                                    <div class="skill-name">HTML</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="95%" style="max-width: 95%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">CSS</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="95%" style="max-width: 95%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">Bootstrap</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">JavaScript</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span><i class="fa fa-calendar"> 2015</i></span><br>SSC - 89%</li>
+                                <li><span><i class="fa fa-calendar"> 2017</i></span><br>HSC - 59.08%</li>
+                                <li><span><i class="fa fa-calendar"> 2018 - 2021</i></span><br>BE ( Computer Science ) -
+                                    68.38%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skill section design -->
+    <section class="skills" id="myskills">
+        <div class="container">
+            <div class="row">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 first-xl-row">
+                    <div class="card1">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src="./portfolio_images/frontend_card.jpg" />
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>FrontEnd<br></h2>
+                                <div class="data frontend">
+                                    <h3><img src="portfolio_images/html-img.jpg" height="45px"
+                                            width="45px"><br><span>HTML</span></h3>
+                                    <h3><img src="portfolio_images/css-img.jpg" height="45px"
+                                            width="32px"><br><span>CSS</span></h3>
+                                    <h3><img src="portfolio_images/js-img.jpg" height="45px"
+                                            width="73px"><br><span>JavaScript</span></h3>
+                                    <h3><img src="portfolio_images/bootstrap-img" height="45px" width="40px"
+                                            style="padding-top: 5px; margin-top: 8px;"><br><span>Bootstrap</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 first-xl-row second-xs-card">
+                    <div class="card1">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src="portfolio_images/backend-card.jpg" />
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>BackEnd<br></h2>
+                                <div class="data">
+                                    <h3><img src="portfolio_images/java-img.jpg" height="45px"
+                                            width="45px"><br><span>Java</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 first-xl-row second-sm-row third-xs-card">
+                    <div class="card1">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src="portfolio_images/database-card.jpg" />
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>Database<br></h2>
+                                <div class="data">
+                                    <h3><img src="portfolio_images/sql-img.jpg" height="45px"
+                                            width="45px"><br><span>SQL</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 second-xl-row second-sm-row fourth-xs-card">
+                    <div class="card1">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src="portfolio_images/platforms-card.jpg" />
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>Platforms<br></h2>
+                                <div class="data">
+                                    <h3><img src="portfolio_images/java-img.jpg" height="45px"
+                                            width="45px"><br><span>Java</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 second-xl-row second-sm-row fifth-xs-card">
+                    <div class="card1">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src="portfolio_images/frameworks-card.jpg" />
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>Frameworks<br></h2>
+                                <div class="data">
+                                    <h3><img src="portfolio_images/java-img.jpg" height="45px"
+                                            width="45px"><br><span>Java</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 second-xl-row second-sm-row sixth-xs-card">
+                    <div class="card1">
+                        <div class="lines"></div>
+                        <div class="imgBx">
+                            <img src="portfolio_images/tools-card.jpg" />
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>Tools<br></h2>
+                                <div class="data">
+                                    <h3><img src="portfolio_images/java-img.jpg" height="45px"
+                                            width="45px"><br><span>Java</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- project section design -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="row">
+                <h2 class="heading">My <span>Projects</span></h2>
+                <!-- <h2 class="heading wow animate__animated animate__backInDown"  style="animation-duration: 1.6s; animation-delay: 0.1s;">My <span>Projects</span></h2> -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col first-card">
+                    <!-- <div class="card"> -->
+                    <div class="box box1"></div>
+                    <div class="home-title text-center">
+                        <h3><b>Homepage</b></h3>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col second-card">
+                    <!-- <div class="card"> -->
+                    <div class="box box1"></div>
+                    <div class="home-title text-center">
+                        <h3><b>Homepage</b></h3>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col second-card">
+                    <!-- <div class="card"> -->
+                    <div class="box box1"></div>
+                    <div class="home-title text-center">
+                        <h3><b>Homepage</b></h3>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col second-card">
+                    <div class="box box1"></div>
+                    <div class="home-title text-center">
+                        <h3><b>Homepage</b></h3>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col second-card">
+                    <div class="box box1"></div>
+                    <div class="home-title text-center">
+                        <h3><b>Homepage</b></h3>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 about-first-col second-card">
+                    <div class="box box1"></div>
+                    <div class="home-title text-center">
+                        <h3><b>Homepage</b></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="contact-wrap">
+            <div class="contact-in">
+               <h1>Contact Info</h1>
+               <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2> 
+               <p>123-456-789</p>
+               <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2> 
+               <p>info@gmial.com</p>
+               <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+               <p>Maharashtra, Mumbai, India</p>
+               <ul>
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+            <div class="contact-in">
+               <h1>Send a Message</h1>
+            <form>
+               <input type="text" placeholder="Full Name" class="contact-in-input">
+               <input type="text" placeholder="Email" class="contact-in-input">
+               <input type="text" placeholder="Subject" class="contact-in-input">
+               <textarea placeholder="Message" class="contact-in-textarea"></textarea> 
+               <input type="submit" value="SUBMIT" class="contact-in-btn">
+            </form> 
+            </div>
+            <div class="contact-in">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.92831486516!2d72.55220734546799!3d19.081958949513805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692813560258!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
